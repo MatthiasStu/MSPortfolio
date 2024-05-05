@@ -1,0 +1,85 @@
+.footer{
+    background-color: #141D2F;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+    border-top: 3px solid #70E61C;
+    padding-bottom: 49px;
+    z-index: 100;
+    position: relative;
+}
+
+.footerLeft{ 
+    margin-left: 44px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    >h1{
+        color: white;
+        margin: 0;
+    }
+}
+
+
+
+.gitbutton, .inbutton, .mailbutton{ 
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.1s ease-in-out;
+    &:hover{ 
+        cursor: pointer;
+        transform: scale();
+        transform: scale(1.35);
+    }
+}
+.footerRight{ 
+    margin-right: 44px;
+    
+}
+.impressum{ 
+    color: white !important;
+    text-decoration: none;
+    &:hover{ 
+        cursor: pointer;
+    }
+}
+.hovereffect{ 
+    display: none;
+    width: 56px;
+}
+.impressum:hover + .hovereffect{
+    display: block;
+}
+
+.copyright{ 
+    color: white;
+}
+
+@media(max-width: 1150px) {
+    .footer{ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+     }
+     .footerRight{ 
+      margin-right: 0px;
+     }
+
+} 
+
+@media screen and (min-width: 2220px){
+    .footerRight{ 
+        margin-right: 130px;
+    }
+    .footerLeft{ 
+        margin-left: 130px;
+    }
+} 

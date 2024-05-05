@@ -1,0 +1,23 @@
+<div class="portfolio-section" id="portfolio">
+    <div class="portfolio-header">
+        <img src="assets/img/Linepurple2.png" class="purplestrokeleft">
+        <h1>Portfolio</h1>
+        <img src="assets/img/Linepurple2.png" class="purplestroke">
+    </div>
+    <h2 class="subheader">Explore a selection of my work here - Interact with project to see my skills in action.</h2>
+    <div *ngFor="let section of sections" class="project" [ngClass]="{ 'sharkieproject': section.projectType === 'sharkie' }">
+        <div class="projectPic">
+            <img [src]="section.imageUrl" class="projectlaptop" id="{{section.header}}">
+        </div>
+        <div class="projectDescription {{section.header}}">
+            <h1 class="projectHeader">{{ section.header }}</h1>
+            <h2 class="projectTechstack">{{ section.techstack }}</h2>
+            <p class="proectDescriptionText">{{ section.description }}</p>
+            <div class="button-section">
+                <button class="testBtn" (click)="liveTestProject( section.testUrl )">Live test</button>
+                <button class="gitBtn" (click)="goToGithub( section.gitUrl )">Github</button>
+            </div>
+        </div>
+    </div>
+    <img src="assets/img/Greenshadow.png" class="Greenshadow">
+</div>

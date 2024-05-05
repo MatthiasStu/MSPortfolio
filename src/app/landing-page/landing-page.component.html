@@ -1,0 +1,28 @@
+<div class="landing-page-main-content" >
+    <img src="assets/img/Photoshadows.png" class="backgroundpic">
+    <img src="assets/img/noBackground-min.png" class="profilpicture">
+
+    <div class="landing-page-right">
+        <div class="textfield">
+            <p class="iam">I am</p>
+            <div class="introductionField">
+                <p class="myname">Matthias Stute</p><br>
+                <p class="frontend-dev">FRONTEND DEVELOPER</p>
+            </div>
+        </div>
+        <a class="lets-talk-btn" [href]="'#talk' | translate">{{ 'contact' | translate }}</a>
+    </div>
+</div>
+<div class="landing-page-footer">
+    <img src="assets/img/Purplestroke.png" class="Purplestroke">
+    <img src="../../assets/img/githubbutton.png" (click)="redirectToExternalWebsite(1)" class="githubbutton">
+    <a href="#talk">
+    <img src="assets/img/Mailbutton.png" class="mailbutton" >
+</a>
+    <img src="assets/img/Linkedinbutton.png" (click)="redirectToExternalWebsite(2)" class="linkedinbutton">
+    <p class="mailadress">{{mailadress}}</p>
+ 
+</div>
+<img src="assets/img/Scroll_down.png" class="scrolldown">
+
+

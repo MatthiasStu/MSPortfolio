@@ -1,0 +1,402 @@
+.portfolio-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >h1 {
+        font-weight: 700;
+        color: #FFFFFF;
+        font-size: 90px;
+        line-height: 108px;
+        text-align: center;
+    }
+}
+
+.portfolio-section {
+    background-color: #141D2F;
+    position: relative;
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+.purplestroke {
+    position: absolute;
+    right: 0;
+    width: 610px;
+    height: 3.9px;
+}
+
+.purplestrokeleft {
+    position: absolute;
+    left: 370px;
+    //
+    width: 240px;
+    height: 3.9px;
+}
+
+
+.subheader {
+    position: relative;
+    left: 370px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    width: 733px;
+    white-space: nowrap;
+
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.sharkieproject{ 
+    flex-direction: row-reverse !important;
+}
+
+.projectlaptop {
+    width: 850px;
+    height: 529px;
+    z-index: 1;
+    position: relative;
+}
+
+.projectDescription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectHeader {
+    font-weight: 700;
+    font-size: 32px;
+    color: #9747FF;
+}
+
+.projectTechstack {
+    font-size: 23px;
+    color: #70E61C;
+}
+
+.proectDescriptionText {
+    color: #FFFFFF;
+    white-space: wrap;
+    max-width: 513px;
+}
+
+.button-section {
+    display: flex;
+    gap: 86px;
+}
+
+.testBtn , .gitBtn {
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 23px;
+    color: white;
+    transition: background-color 0.2s ease;
+    &:hover{ 
+        background-color: #70E61C;
+        cursor: pointer;
+    }
+}
+
+.testBtn{ 
+    background-color: #9747FF;
+ 
+}
+
+.gitBtn{ 
+    background-color: transparent;
+    border: 2px solid #70E61C; 
+}
+
+
+.Greenshadow{
+    position: absolute;
+     z-index: 0;
+    top: 650px;
+    right: -260px;
+    rotate: 70deg;
+}
+
+#Sharkie{ 
+    width: 940px;
+    margin-right: -60px;
+    height: 510px;
+}
+
+#Join{ 
+    margin-bottom: -30px;
+}
+
+@media(max-width: 1660px){
+    .purplestroke{ 
+        width: 560px; 
+    }
+    .purplestrokeleft{ 
+        width: 190px; 
+    }
+}
+
+@media(max-width: 1500px){
+    .purplestroke{ 
+        width: 520px; 
+    }
+    .purplestrokeleft{ 
+        width: 140px; 
+    }
+}
+
+@media(max-width: 1430px){
+    .purplestroke{ 
+        width: 470px; 
+    }
+    .purplestrokeleft{ 
+        width: 90px; 
+    }
+}
+
+@media(max-width: 1380px){
+ .subheader{ 
+    max-width: 820px;
+    white-space: wrap;
+ }
+ .projectDescription.Sharkie{
+    margin-left: 140px;
+    margin-right: -140px;
+ }
+ .projectDescription.Join{
+    margin-left: -140px;
+    margin-right: 140px;
+ }
+}
+
+@media(max-width: 1330px){
+    .purplestroke{ 
+        width: 430px; 
+    }
+    .purplestrokeleft{ 
+        width: 50px; 
+    }
+   }
+
+   @media(max-width: 1240px){
+    .purplestroke{ 
+        width: 380px; 
+    }
+    .purplestrokeleft{ 
+        width: 40px; 
+    }
+   }
+
+   @media(max-width: 1150px) {
+    #Sharkie{
+        margin-right: 0;
+    }
+    .purplestroke{ 
+        width: 180px;
+    }
+    
+    .purplestrokeleft{ 
+        left: 150px;
+        width: 100px;
+    }
+    .Greenshadow{ 
+        display: none;
+    }
+
+    .project{ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sharkieproject{ 
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectDescription.Join{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .projectDescription.Sharkie{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .subheader{ 
+        max-width: 400px;
+        left: 25%;
+    }
+    .portfolio-header{ 
+        font-size: 45px;
+    }
+    .projectDescription.Sharkie{ 
+        margin-bottom: 60px;
+    }
+   }
+
+   @media(max-width: 770px) {
+    .purplestroke{ 
+        width: 150px;
+    }
+    
+    .purplestrokeleft{ 
+        width: 60px;
+        left: 100px;
+    }
+   } 
+@media(max-width: 890px) {
+    .purplestrokeleft{ 
+        width: 60px;
+     
+    }
+}
+@media(max-width: 795px) {
+    .purplestrokeleft{ 
+        left: 95px;
+     
+    }
+}
+   @media(max-width: 680px) {
+    .purplestroke{ 
+        width: 110px;
+    }
+    
+    .purplestrokeleft{ 
+        width: 60px;
+        left: 60px;
+    }
+   } 
+
+   @media(max-width: 620px) {
+    .purplestroke{ 
+        width: 80px;
+    }
+    
+    .purplestrokeleft{ 
+        width: 40px;
+        left: 40px;
+    }
+    .subheader{ 
+        max-width: 340px;
+    }
+    
+   } 
+
+   
+   @media(max-width: 540px) {
+    .purplestroke{ 
+        width: 60px;
+    }
+    
+    .purplestrokeleft{ 
+        width: 20px;
+        left: 20px;
+    }
+    .gitBtn{
+        padding: 7px 20px 7px 20px; 
+    }
+    .testBtn{ 
+        padding: 7px 20px 7px 20px; 
+    }
+   } 
+   
+   @media(max-width: 500px) {
+    .purplestroke{ 
+        width: 10px;
+    }
+    
+    .purplestrokeleft{ 
+        width: 10px;
+        left: 10px;
+    }
+
+    #Sharkie{ 
+        max-width: 400px;
+        max-height: 300px;
+    }
+ 
+    #Join{ 
+        max-width:  400px;
+        max-height: 320px;
+    }
+    .proectDescriptionText{ 
+        max-width: 360px;
+    }
+    .button-section{ 
+        gap: 17px;
+    }
+}
+
+@media(max-width: 463px) { 
+    .subheader{ 
+        max-width: 300px;
+        left: 15%;
+    }
+}
+
+
+@media(max-width: 420px) {
+    .purplestroke{ 
+       display: none;
+    }
+    
+    .purplestrokeleft{ 
+    display: none; 
+    }
+
+    #Join{ 
+        max-width: 300px;
+        max-height: 220px;
+    }
+    #Sharkie{ 
+        max-width: 320px;
+        max-height: 220px;
+    }
+
+    .projectDescription{ 
+        max-width: 320px;
+    }
+ }
+ @media(max-width: 383px) { 
+    .portfolio-header{ 
+        
+    
+        >h1{ 
+            text-align: center;
+            width: 58vw;
+            max-width: 250px;
+            font-size: 60px;
+        }
+    }
+    .subheader{ 
+        max-width: 250px;
+    }
+    .projectDescription.Join{ 
+        max-width: 220px;
+    }
+    .projectDescription.Sharkie{ 
+        max-width: 220px;
+    }
+}
+ @media screen and (min-width: 2220px){
+    .purplestrokeleft{ 
+        width: 300px;
+    }
+    .purplestroke{ 
+        width: 650px;
+    }
+ } 

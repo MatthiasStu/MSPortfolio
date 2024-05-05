@@ -1,0 +1,102 @@
+
+@mixin flexbox($dstyle, $jcstyle, $aistyle){
+    display: $dstyle;
+    justify-content: $jcstyle;
+    align-items: $aistyle;
+}
+
+h2{ 
+    margin: 0;
+}
+.header {
+  position: relative;
+  background-color: #141D2F;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:  37px 100px 37px 100px; 
+  z-index: 1000;
+  >.header-left{ 
+    color: white;
+    font-size: 28px;
+    padding-left: 48px;
+  }
+}
+
+.mobilemenubutton{
+  display: none;
+}
+
+.mobilemenu{ 
+  display: none
+}
+.mobilemenuclosed {
+  display: none;
+}
+
+.mobilemenuopen {
+  display: none; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Verwende fixed, damit das Menü unabhängig vom Scrollen positioniert wird */
+  top: 100px; /* Lege das Menü am oberen Rand des Bildschirms fest */
+  left: 0; /* Lege das Menü am linken Rand des Bildschirms fest */
+  width: 100%; /* Das Menü nimmt die gesamte Breite des Bildschirms ein */
+  height: 100%; /* Das Menü nimmt die gesamte Höhe des Bildschirms ein */
+  z-index: 10; /* Stelle sicher, dass das Menü über anderen Elementen liegt */
+  background-color: #1a2438d1; /* Hintergrundfarbe des Menüs mit Transparenz */
+  gap: 29px; /* Abstand zwischen den Elementen im Menü */
+  >a{ 
+    color: white; 
+    text-decoration: none; 
+  }
+}
+
+.mobilemenu{
+  display: none; 
+  flex-direction: column
+}
+.menu{
+    @include flexbox(flex,center,center); 
+    gap: 29px;
+    
+    >a{
+    color: white; 
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 23px;
+    transition: 0.2s;
+    &:hover{ 
+        color: #70E61C;
+    }
+}
+    
+}
+
+@media(max-width: 1150px){ 
+  .menu{ 
+    display: none;
+  }
+  .mobilemenu{ 
+    @include flexbox(flex,center,center); 
+  }
+  .mobilemenubutton{ 
+    display: block;
+  }
+  .mobilemenuopen{ 
+    display: flex;
+  }
+  .header{ 
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+@media screen and (min-width: 2220px){
+.header-left{ 
+  margin-left: 130px;
+}
+.menu{ 
+  margin-right: 130px;
+}
+} 
