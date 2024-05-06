@@ -19,4 +19,3 @@ import { FooterComponent } from './footer/footer.component';
 export class AppComponent {
   title = 'matthias-stute-portfolio';
 }
-
