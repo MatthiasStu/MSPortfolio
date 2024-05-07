@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeaderComponent } from './shared/header/header.component';
@@ -12,37 +12,24 @@ import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from './footer/footer.component';
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
-Component({
-    selector: 'app-root',
-    standalone: true,
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
-    imports: [ HeaderComponent, LandingPageComponent, AboutMeSectionComponent, MySkillsComponent, PortfolioComponent, ContactMeComponent, FooterComponent]
-})
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
+@Component({
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [ RouterOutlet, HeaderComponent, LandingPageComponent, AboutMeSectionComponent, MySkillsComponent, PortfolioComponent, ContactMeComponent, FooterComponent]
+})
 export class AppComponent {
   title = 'matthias-stute-portfolio';
+  constructor(private translate: TranslateService) { }
+
+  setLanguage(language: string) {
+    this.translate.use(language);
+  }
 }
-
-@NgModule({
-
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    RouterModule.forRoot([]), 
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
