@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService} from '@ngx-translate/core';
-import { LanguageService } from '../language.service';
+
 
 
 @Component({
@@ -15,14 +15,14 @@ export class LandingPageComponent {
   linkedin:string = 'https://www.linkedin.com/in/matthias-stute-664147305/';
   github:string = 'https://github.com/MatthiasStu';
 
-  constructor(private translate: TranslateService , private languageService: LanguageService){ 
+  constructor(private translate: TranslateService){ 
     translate.setDefaultLang('en');
   }
 
-  changeLanguage(language: string) {
-    this.languageService.setLanguage(language);
-    console.log('works')
-  }
+switchlanguage(x:string){ 
+  this.translate.use(x);
+}
+
   redirectToExternalWebsite(x:number){
     if(x == 2){
       window.open(this.linkedin, '_blank');

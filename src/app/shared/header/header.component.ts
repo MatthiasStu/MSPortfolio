@@ -1,6 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component} from '@angular/core';
-import { LanguageService } from '../../language.service';
+import { TranslateModule, TranslateService} from '@ngx-translate/core';
 
 
 
@@ -8,20 +8,19 @@ import { LanguageService } from '../../language.service';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  
-
-  constructor(private languageService: LanguageService) { }
-
-  changeLanguage(language: string) {
-    this.languageService.setLanguage(language);
+  mobileMenuOpen:boolean = false;
+  constructor(private translate: TranslateService){ 
+    translate.setDefaultLang('en');
   }
-  
-  mobileMenuOpen:boolean = false; 
+   
+  switchlanguage(x:string){ 
+    this.translate.use(x);
+  }
 
   openMobileMenu(){ 
     this.mobileMenuOpen = !this.mobileMenuOpen;

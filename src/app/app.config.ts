@@ -18,7 +18,7 @@ export const appConfig: ApplicationConfig = {
         deps: [HttpClient]
       }
     }).providers!]
-};
+}; 
 
 
 export function HttpLoaderFactory(http: HttpClient) {
