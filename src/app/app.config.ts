@@ -22,5 +22,5 @@ export const appConfig: ApplicationConfig = {
 
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
 }
