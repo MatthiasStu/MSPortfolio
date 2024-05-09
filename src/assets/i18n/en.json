@@ -1,9 +1,36 @@
-{
-    "general":{
+{"header":{
+    "aboutme": "About me",
+    "skills": "Skills"
+},"landingpage":{ 
+    "iam" : "I am",
+    "letstalk" : "Let's Talk!"
+}, "aboutme": { 
+    "aboutmeheader": "About Me",
+    "aboutmetext": "Hi, I am a Front-end developer based in Oldenburg, Germany! I thrive on the challenges of coding and problem-solving, constantly seeking ways to elevate user interfaces and experiences. Currently on the lookout for opportunities to grow and contribute as a junior web developer, I bring dedication, creativity, and a hunger for learning to every project. If you're in need of a motivated developer to join your team, let's chat!", 
+       "text1": "Always open to new ideas and challenges, I'm driven by a constant thirst for knowledge and improvement. Let's collaborate and illuminate the digital landscape together!", 
+       "text2": "Consider me the missing puzzle piece for your team. With my passion for Front-end development and dedication to excellence, I'm ready to contribute to your projects and help you achieve your goals. Let's connect and unlock the full potential of your company's digital presence!"
 
-    "about_me": "About Me",
-    "skills": "My Skills",
-    "portfolio": "Portfolio",
-    "contact": "Let's Talk", 
-    "footer_message": "© 2024 Matthias Stute. All rights reserved."
-}}
+
+}, "myskills": {
+    "myskills" : "My Skills",
+    "msText" : "I have gained experience in building projects with various front end technologies and concepts", 
+    "gitbtn" : "Get in touch"
+}, "portfolio" :{ 
+    "portfolioHeader": "Explore a selection of my work here - Interact with projects to see my skills in action.", 
+    "joinText": "Task manager modelled on the Kanban system. Create and organise tasks using drag-and-drop functions and assign users and categories.",
+    "sharkieText": "A simple 2D game based on an object-orientated approach. Help Sharkie find coins and fight against the killer whale."
+}, 
+"contact": { 
+    "contactheader": "Contact",
+    "pts": "Got any problem to solve?", 
+    "cmtext": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your  projects with my work.", 
+    "cmsubtext": "Need a Frontend developer ?", 
+    "big" : "Contact me!",
+    "yourn" : "Your name",
+    "yourm": "Your email", 
+    "yourmessage": "Your message",
+    "privacy" : "I've read the  ", 
+    "ppr": "privacy policy", 
+    "pp": "and agree to the processing of my data as outlined", 
+    "sm": "Send message "
+}} 

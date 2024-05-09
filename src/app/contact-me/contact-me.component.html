@@ -1,29 +1,27 @@
 <div class="contact-me" id="talk">
     <img src="assets/img/purpleline.png" class="purpleline">
     <div class="contact-section">
-        <div class="contact-text">
+        <div class="contact-text" [ngStyle]="setMarginLeft()">
 
-            <h1 class="contact-header">Contact</h1>
-            <h2 class="contact-subheader">Got any problem to solve? </h2>
-            <p class="contact-me-text">Contact me through this form, I am interested in hearing <br>from you, knowing
-                your ideas and contributing to your <br> projects with my work.</p>
-            <p class="closing-line">Need a Frontend developer ? <b class="big">Contact me!</b></p>
+            <h1 class="contact-header">{{ 'contact.contactheader' | translate }}</h1>
+            <h2 class="contact-subheader">{{ 'contact.pts' | translate }}</h2>
+            <p class="contact-me-text">{{ 'contact.cmtext' | translate }}</p>
+            <p class="closing-line">{{ 'contact.cmsubtext' | translate }} <b class="big">{{ 'contact.big' | translate }}</b></p>
         </div>
     </div>
     <div class="formssection">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-            <input [(ngModel)]="contactData.name" class="yourname" name="name" placeholder="Your name" required>
-            <input #email="ngModel" [(ngModel)]="contactData.email" class="yourmail" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            <input [(ngModel)]="contactData.name" class="yourname" name="name" placeholder="{{ 'contact.yourn' | translate }}" required>
+            <input #email="ngModel" [(ngModel)]="contactData.email" class="yourmail" name="email" placeholder="{{ 'contact.yourm' | translate }}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
             <span *ngIf="email.invalid && email.touched">Please enter a valid email</span>
-            <textarea #message="ngModel" [(ngModel)]="contactData.message" class="yourmessage" name="message" placeholder="Your message" required></textarea>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" class="yourmessage" name="message" placeholder="{{ 'contact.yourmessage' | translate }}" required></textarea>
 
             @if(!message.valid && message.touched){
                 <span>Please enter a message</span>
             }
             <div class="checkbox-container">
                 <img src={{imgPath}} class="checkbutton" (click)="switchImage()">
-                <p class="privacy-policy">I've read the <a href="https://matthias-stute.com/privacypolicy.html" class="director">privacy policy</a> and agree to the
-                    processing of my data as outlined</p>
+                <p class="privacy-policy" [ngStyle]="setMaxWidth()" >{{ 'contact.privacy' | translate }} <a href="https://matthias-stute.com/privacypolicy.html" class="director">{{ 'contact.ppr' | translate }}</a>{{ 'contact.pp' | translate }}</p>
             </div>
             <span id="invalid" class="invalid"></span>
             <button class="gray-btn" [class.send-btn]="isFormFilled(contactForm)" type="submit">Send message</button>

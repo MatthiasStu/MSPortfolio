@@ -1,22 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import path from 'path';
-import { TranslateService} from '@ngx-translate/core';
+import { TranslateModule} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
-  constructor(private translate: TranslateService){ 
-    translate.setDefaultLang('en');
-  }
-  switchLanguage(language: string) {
-    this.translate.use(language);
-  }
+
 
 logos = [
   {name: 'Angular', path: 'assets/img/logos/Angular.png'},

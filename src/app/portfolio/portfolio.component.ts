@@ -1,10 +1,11 @@
-import { NgClass, NgFor } from '@angular/common';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [NgFor, NgClass],
+  imports: [NgFor,NgIf,NgClass, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
@@ -14,7 +15,6 @@ sections = [
     imageUrl: 'assets/img/join.png',
     header: 'Join',
     techstack: 'JavaScript | HTML | CSS | Git',
-    description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categorys',
     projectType: 'join', 
     gitUrl : 'https://github.com/MatthiasStu/Join-Task-and-Contact-Management',
     testUrl : 'https://matthias-stute.com/Join-Task-and-Contact-Management/html/login.html'
@@ -24,7 +24,6 @@ sections = [
     imageUrl: 'assets/img/sharkie.png', 
     header: 'Sharkie', 
     techstack: 'Javascript | HTML | CSS', 
-    description: 'A simple 2D game based on an object-oriented approach. Help sharkie to find coins and fight against the killer whale', 
     projectType: 'sharkie', 
     gitUrl : 'https://github.com/MatthiasStu/Sharkie-Game',
     testUrl: 'https://matthias-stute.com/sharkieFinish/index.html'

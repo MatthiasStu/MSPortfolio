@@ -1,8 +1,31 @@
-{"general":{
-    "welcome_message": "Welcome to my portfolio!",
-    "about_me": "About Me",
-    "skills": "My Skills",
-    "portfolio": "Portfolio",
-    "contact": "Kontaktieren sie mich",
-    "footer_message": "© 2024 Matthias Stute. All rights reserved."
-}} 
+{"header":{
+    "aboutme": "Über mich",
+    "skills": "Fähigkeiten"
+},"landingpage":{ 
+    "iam" : "Ich bin",
+    "letstalk" : "Lass und sprechen!"
+}, "aboutme": { 
+    "aboutmeheader": "Über mich",
+    "aboutmetext": "Hallo, ich bin ein Front-End-Entwickler aus Oldenburg, Deutschland! Ich liebe die Herausforderungen des Programmierens und der Problemlösung und bin ständig auf der Suche nach Möglichkeiten, Benutzeroberflächen und -erlebnisse zu verbessern. Zurzeit bin ich auf der Suche nach Möglichkeiten, mich als Junior-Webentwickler weiterzuentwickeln und einen Beitrag zu leisten. Ich bringe Engagement, Kreativität und Lernbereitschaft in jedes Projekt ein. Wenn Sie einen motivierten Entwickler zur Verstärkung Ihres Teams suchen, lassen Sie uns reden!", 
+       "text1": "Ich bin immer offen für neue Ideen und Herausforderungen und werde von einem ständigen Durst nach Wissen und Verbesserung angetrieben. Lassen Sie uns zusammenarbeiten und die digitale Landschaft gemeinsam erhellen!", 
+       "text2": "Betrachten Sie mich als das fehlende Puzzlestück für Ihr Team. Mit meiner Leidenschaft für die Front-End-Entwicklung und meiner Hingabe für hervorragende Leistungen bin ich bereit, zu Ihren Projekten beizutragen und Ihnen zu helfen, Ihre Ziele zu erreichen. Lassen Sie uns zusammenarbeiten und das volle Potenzial der digitalen Präsenz Ihres Unternehmens freisetzen!"
+},"myskills": {
+    "myskills" : "Meine Fähigkeiten",
+    "msText" : "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "gitbtn" : "Kontakt aufnehmen"
+}, "portfolio" :{ 
+    "portfolioHeader": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit dem Projekt, um meine Fähigkeiten in Aktion zu sehen.", 
+    "joinText": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "sharkieText": "Ein einfaches 2D-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen zu finden und gegen den Killerwal zu kämpfen."
+}, "contact": { 
+    "contactheader": "Kontakt",
+    "pts": "Sie haben ein problem zu lösen?", 
+    "cmtext": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert von Ihnen zu hören, <br>Ihre Ideen zu kennen und zu Ihren Projekte mit meiner Arbeit beizutragen.", 
+    "cmsubtext": "Brauchen Sie einen Frontend-Developer? ", 
+    "big" : "Kontaktieren Sie mich!",
+    "yourn" : "Ihr Name",
+    "yourm": "Ihre E-Mail Adresse", 
+    "yourmessage": "Ihre Nachricht", 
+    "privacy" : "Ich habe die Datenschutzbestimmungen gelesen und bin mit der Verarbeitung meiner Daten einverstanden.", 
+    "sm": "Nachricht senden"
+}}

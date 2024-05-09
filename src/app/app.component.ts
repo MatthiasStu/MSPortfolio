@@ -28,8 +28,4 @@ export function HttpLoaderFactory(http: HttpClient) {
 export class AppComponent {
   title = 'matthias-stute-portfolio';
   constructor(private translate: TranslateService) { }
-
-  setLanguage(language: string) {
-    this.translate.use(language);
-  }
 }

@@ -3,18 +3,36 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
 
+  constructor(private translateService: TranslateService) {}
+
+  setMarginLeft(){
+    if(this.translateService.currentLang === 'de'){
+      return{ 'margin-left' : '145px'}
+    }else{ 
+      return
+    }
+  }
+
+  setMaxWidth(){
+    if(this.translateService.currentLang === 'de'){
+      return{ 'max-width' : '680px'}
+    }else{ 
+      return
+    }
+  }
 
 isClicked:boolean = false; 
 imgPath:string = 'assets/img/checkbuttonDefault.png'; 

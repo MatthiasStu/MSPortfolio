@@ -13,13 +13,33 @@ import { TranslateModule, TranslateService} from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  imgPath:string = "assets/img/british.png";  
   mobileMenuOpen:boolean = false;
+  isTranslated:boolean = false; 
+
+
+
   constructor(private translate: TranslateService){ 
     translate.setDefaultLang('en');
   }
    
-  switchlanguage(x:string){ 
-    this.translate.use(x);
+  switchlanguage() { 
+    this.switchImage()
+    if(this.isTranslated == false){ 
+    this.translate.use('en');
+    }else { 
+    this.translate.use('de'); 
+    }
+  }
+
+  switchImage(){ 
+    if(this.isTranslated == false){ 
+      this.imgPath = "assets/img/german.png"
+      this.isTranslated = true; 
+    }else{ 
+      this.imgPath = "assets/img/british.png";  
+      this.isTranslated = false; 
+    }
   }
 
   openMobileMenu(){ 

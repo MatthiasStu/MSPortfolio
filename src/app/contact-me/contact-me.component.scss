@@ -32,6 +32,7 @@
     flex-direction: column;
     position: relative;
     z-index: 100;
+    margin-right: -40px;
 }
 
 .contact-subheader {
@@ -62,6 +63,7 @@
 
 .contact-me-text {
     color: white;
+    max-width: 400px;
 }
 
 .closing-line {

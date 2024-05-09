@@ -48,11 +48,17 @@
 .skillsText {
     color: white;
     text-align: right;
+    max-width: 400px;
 
 }
 
 .skillstextcontainer {
     position: absolute;
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
     right: 260px;
     align-items: center;
 }
@@ -173,11 +179,11 @@
     }
 
     .skillstextcontainer {
-        top: -280px;
+        top: -335px;
     }
 
     .purpleline {
-        margin-top: -1417px;
+        margin-top: -1169px;
     }
 
     .logoSection {
@@ -271,7 +277,7 @@
 } 
 
 @media(max-width: 720px) {
-   .git-btn{ top: 1150px;}
+   .git-btn{ top: 1185px;}
 }
 
 
@@ -332,7 +338,7 @@
 
             @media(max-width: 452px) {
                 .git-btn{ 
-                    margin-top: 430px;
+                    margin-top: 460px;
                 }
                 .myskills{ 
                     padding-bottom: 342px;

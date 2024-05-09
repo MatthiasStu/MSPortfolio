@@ -7,6 +7,18 @@
 
 h2{ 
     margin: 0;
+    font-size: 45px
+}
+.countryFlag{ 
+  height: 45px;
+  width: 60px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.name{ 
+  display: flex;
+  flex-direction: row;
 }
 .header {
   position: relative;
@@ -21,6 +33,9 @@ h2{
     font-size: 28px;
     padding-left: 48px;
   }
+}
+.s{
+  color: greenyellow;
 }
 
 .mobilemenubutton{
@@ -53,10 +68,16 @@ h2{
   }
 }
 
+.color-s{ 
+  color: #70e61c;
+  font-size: 47px;
+}
+
 .mobilemenu{
   display: none; 
   flex-direction: column
 }
+
 .menu{
     @include flexbox(flex,center,center); 
     gap: 29px;
