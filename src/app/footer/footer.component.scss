@@ -1,11 +1,15 @@
-.footer{
+.content{ 
+    border-top: 3px solid #70E61C;
     background-color: #141D2F;
+}
+.footer{
+   max-width: 3100px;
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 80px;
-    border-top: 3px solid #70E61C;
+   
     padding-bottom: 49px;
     z-index: 100;
     position: relative;

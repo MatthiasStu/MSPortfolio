@@ -1,3 +1,6 @@
+.content{ 
+    background-color: #141D2F;
+}
 .contact-me {
     background-color: #141D2F;
     display: flex;
@@ -6,10 +9,11 @@
     position: relative;
     overflow: hidden;
     margin-top: -5px;
+
 }
 
 .contact-section {
-    background-color: #141D2F;
+    max-width: 3100px;
     display: flex;
 
 }
@@ -189,7 +193,14 @@ span{
     color: red;
 }
 
-
+@media(min-width: 3100px){
+    .purpleline{ 
+        display: none;
+    }
+    .pshadow{ 
+        display: none;
+    }
+}
 @media (max-width : 1730px){ 
     .purpleline{ 
         width: 100px;  

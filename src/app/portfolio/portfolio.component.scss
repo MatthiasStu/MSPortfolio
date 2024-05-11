@@ -1,3 +1,6 @@
+.content{ 
+    background-color: #141D2F;
+}
 .portfolio-header {
     display: flex;
     justify-content: center;
@@ -13,7 +16,7 @@
 }
 
 .portfolio-section {
-    background-color: #141D2F;
+    max-width: 3100px;
     position: relative;
     overflow: hidden;
     margin-top: -5px;
@@ -61,6 +64,17 @@
     height: 529px;
     z-index: 1;
     position: relative;
+    transition: transform 0.2s ease;
+    animation: reveal linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% entry-crossing 100%;
+      
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+ 
 }
 
 .projectDescription {
@@ -133,6 +147,19 @@
     margin-bottom: -30px;
 }
 
+
+@media(min-width: 3100px){ 
+    .Greenshadow{ 
+        display: none;
+    }
+    .purplestroke{ 
+        display: none;
+
+    }
+    .purplestrokeleft{
+        display: none;
+    }
+}
 @media(max-width: 1660px){
     .purplestroke{ 
         width: 560px; 
@@ -141,6 +168,7 @@
         width: 190px; 
     }
 }
+
 
 @media(max-width: 1500px){
     .purplestroke{ 

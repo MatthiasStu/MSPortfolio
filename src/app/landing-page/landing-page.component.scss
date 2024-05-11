@@ -4,12 +4,15 @@
 }
 
 .landing-page-main-content {
-    background-color: #141D2F;
+    max-width: 3100px;
     display: flex;
     position: relative;
     align-items: center;
     margin-top: -3px;
+}
 
+.content{ 
+    background-color: #141D2F;
 }
 .mailbutton{ 
     margin-top: 4px;
@@ -397,6 +400,7 @@ $breakpoints: (
     .frontend-dev{ 
         font-size: 25px !important;
     }
+    
   } 
 
   @media screen and (min-width: 2200px){ 

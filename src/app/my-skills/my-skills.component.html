@@ -1,19 +1,20 @@
-
-<div class="myskills">
-    <img src="assets/img/Greenshadow.png" class="backgroundelement">
-    <div class="logoSection">
-        <div *ngFor="let logo of logos" class="logo-item">
-        <img [src]="logo.path" class="logo-item">
-        <p class="logoname">{{ logo.name }}</p>
+<div class="content">
+    <div class="myskills">
+        <img src="assets/img/Greenshadow.png" class="backgroundelement">
+        <div class="logoSection">
+            <div *ngFor="let logo of logos" class="logo-item">
+                <img [src]="logo.path" class="logo-item">
+                <p class="logoname">{{ logo.name }}</p>
+            </div>
         </div>
+
+        <div class="skillstextcontainer" [ngStyle]="setGermanStyle()">
+            <h1 class="myskillsheader" [ngStyle]="setFontSize()" id="skills">{{ 'myskills.myskills' | translate }}</h1>
+            <p class="skillsText" [ngStyle]="centerText()">{{ 'myskills.msText' | translate }}</p>
+            <div class="buttonContainer">
+                <a class="git-btn" href="#talk">{{ 'myskills.gitbtn' | translate }}</a>
+            </div>
+        </div>
+        <img src="assets/img/purpleline.png" class="purpleline">
     </div>
-    
-    <div class="skillstextcontainer"  >
-        <h1 class="myskillsheader" id="skills">{{ 'myskills.myskills' | translate }}</h1>
-        <p class="skillsText">{{ 'myskills.msText' | translate }}</p>
-        <div class="buttonContainer">
-        <a class="git-btn" href="#talk">{{ 'myskills.gitbtn' | translate }}</a>
-    </div>
-    </div>
-    <img src="assets/img/purpleline.png" class="purpleline">
 </div>

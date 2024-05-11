@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import path from 'path';
-import { TranslateModule} from '@ngx-translate/core';
+import { TranslateModule, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-skills',
@@ -12,6 +12,33 @@ import { TranslateModule} from '@ngx-translate/core';
 })
 export class MySkillsComponent {
 
+  constructor(private translateService: TranslateService) {}
+
+  setGermanStyle(){
+    if(this.translateService.currentLang === 'de'){
+      return{ 'right' : '85px', 
+        'justify-content': 'center',
+        'align-items': 'center'
+      }
+    }else{ 
+      return
+    }
+  }
+  centerText(){
+    if(this.translateService.currentLang === 'de'){
+      return{ 'text-align': 'center'}
+    }else{ 
+      return
+    }
+  }
+  setFontSize(){
+    if(this.translateService.currentLang === 'de'){
+      return{ 'font-size' : '64px',
+      'text-align': 'center'}
+    }else{ 
+      return{'font-size' : '90px'}
+    }
+  }
 
 logos = [
   {name: 'Angular', path: 'assets/img/logos/Angular.png'},

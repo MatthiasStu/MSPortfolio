@@ -1,3 +1,7 @@
+
+.content{ 
+    background-color: #141D2F;
+}
 .about-me-section {
     color: white;
     position: relative;
@@ -8,12 +12,10 @@
     justify-content: space-around;
     z-index: 1;
     margin-top: -5px;
-
-
 }
 
 .backgroundcontainer {
-    background-color: #141D2F;
+    max-width: 3100px;
     padding-bottom: 450px;
 }
 
@@ -74,7 +76,6 @@
     flex-direction: column;
     max-width: 452px;
     z-index: 2;
-
     >.about-me-text {
         font-weight: 400;
         font-size: 16px;
@@ -140,7 +141,15 @@
 
 
 
+@media(min-width: 3100px){ 
+    .greenline{ 
+        display: none;
 
+    }
+    .backgroundelement{
+        display: none;
+    }
+}
 @media(max-height: 736px){ 
     .section-divider{ 
         top: 675px;
