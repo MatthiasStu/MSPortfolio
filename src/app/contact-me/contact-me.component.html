@@ -4,14 +4,14 @@
     <div class="contact-section">
         <div class="contact-text" [ngStyle]="setMarginLeft()">
 
-            <h1 class="contact-header">{{ 'contact.contactheader' | translate }}</h1>
-            <h2 class="contact-subheader">{{ 'contact.pts' | translate }}</h2>
-            <p class="contact-me-text">{{ 'contact.cmtext' | translate }}</p>
-            <p class="closing-line">{{ 'contact.cmsubtext' | translate }} <b class="big">{{ 'contact.big' | translate }}</b></p>
+            <h1 class="contact-header" data-aos="fade-in">{{ 'contact.contactheader' | translate }}</h1>
+            <h2 class="contact-subheader" data-aos="fade-in">{{ 'contact.pts' | translate }}</h2>
+            <p class="contact-me-text" data-aos="fade-in">{{ 'contact.cmtext' | translate }}</p>
+            <p class="closing-line" data-aos="fade-in">{{ 'contact.cmsubtext' | translate }} <b class="big">{{ 'contact.big' | translate }}</b></p>
         </div>
     </div>
     <div class="formssection">
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-in">
             <input [(ngModel)]="contactData.name" class="yourname" name="name" placeholder="{{ 'contact.yourn' | translate }}" required>
             <input #email="ngModel" [(ngModel)]="contactData.email" class="yourmail" name="email" placeholder="{{ 'contact.yourm' | translate }}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
             <span *ngIf="email.invalid && email.touched">Please enter a valid email</span>
@@ -22,7 +22,7 @@
             }
             <div class="checkbox-container">
                 <img src={{imgPath}} class="checkbutton" (click)="switchImage()">
-                <p class="privacy-policy" [ngStyle]="setMaxWidth()" >{{ 'contact.privacy' | translate }} <a href="https://matthias-stute.com/privacypolicy.html" class="director">{{ 'contact.ppr' | translate }}</a>{{ 'contact.pp' | translate }}</p>
+                <p class="privacy-policy" [ngStyle]="setMaxWidth()" >{{ 'contact.privacy' | translate }} <a href="https://matthias-stute.com/privacypolicy.html" class="director"> {{ 'contact.ppr' | translate }} </a>{{ 'contact.pp' | translate }}</p>
             </div>
             <span id="invalid" class="invalid"></span>
             <button class="gray-btn" [class.send-btn]="isFormFilled(contactForm)" type="submit">Send message</button>

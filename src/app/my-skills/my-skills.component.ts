@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import path from 'path';
 import { TranslateModule, TranslateService} from '@ngx-translate/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-my-skills',
@@ -13,6 +14,10 @@ import { TranslateModule, TranslateService} from '@ngx-translate/core';
 export class MySkillsComponent {
 
   constructor(private translateService: TranslateService) {}
+  ngOnInit(): void {
+  
+    AOS.init();
+  } 
 
   setGermanStyle(){
     if(this.translateService.currentLang === 'de'){

@@ -13,7 +13,7 @@ import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from './footer/footer.component';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
+import { ImpressumComponent } from './impressum/impressum.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);

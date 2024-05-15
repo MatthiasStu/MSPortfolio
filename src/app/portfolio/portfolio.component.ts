@@ -1,6 +1,8 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
+
 
 @Component({
   selector: 'app-portfolio',
@@ -10,6 +12,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
+  ngOnInit(): void {
+  
+    AOS.init();
+  } 
 sections = [
   { 
     imageUrl: 'assets/img/join.png',

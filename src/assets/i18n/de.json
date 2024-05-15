@@ -20,12 +20,14 @@
 }, "contact": { 
     "contactheader": "Kontakt",
     "pts": "Sie haben ein problem zu lösen?", 
-    "cmtext": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert von Ihnen zu hören, <br>Ihre Ideen zu kennen und zu Ihren Projekte mit meiner Arbeit beizutragen.", 
+    "cmtext": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert von Ihnen zu hören, Ihre Ideen zu kennen und zu Ihren Projekte mit meiner Arbeit beizutragen.", 
     "cmsubtext": "Brauchen Sie einen Frontend-Developer? ", 
     "big" : "Kontaktieren Sie mich!",
     "yourn" : "Ihr Name",
     "yourm": "Ihre E-Mail Adresse", 
     "yourmessage": "Ihre Nachricht", 
-    "privacy" : "Ich habe die Datenschutzbestimmungen gelesen und bin mit der Verarbeitung meiner Daten einverstanden.", 
+    "privacy" : "Ich habe die ", 
+    "ppr": "Datenschutzrichtlinien", 
+    "pp": " gelesen und bin mit der Verarbeitung meiner Daten einverstanden.", 
     "sm": "Nachricht senden"
 }}

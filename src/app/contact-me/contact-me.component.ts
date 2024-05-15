@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import AOS from 'aos';
 
 
 
@@ -15,7 +16,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
-
+  ngOnInit(): void {
+  
+    AOS.init();
+  } 
   constructor(private translateService: TranslateService) {}
 
   setMarginLeft(){

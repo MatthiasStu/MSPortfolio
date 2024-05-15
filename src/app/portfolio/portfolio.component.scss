@@ -20,6 +20,9 @@
     position: relative;
     overflow: hidden;
     margin-top: -5px;
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-timeline: scrollTimeline;
 }
 
 .purplestroke {
@@ -65,9 +68,6 @@
     z-index: 1;
     position: relative;
     transition: transform 0.2s ease;
-    animation: reveal linear both;
-    animation-timeline: view(block);
-    animation-range: entry 0% entry-crossing 100%;
       
     &:hover{
         transform: scale(1.1);
@@ -76,7 +76,16 @@
 
  
 }
-
+@scroll-timeline scrollTimeline {
+    source: selector(#scrollContainer);
+    orientation: block;
+    scroll-offsets: 0%, 100%;
+  }
+  
+  @keyframes reveal {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
 .projectDescription {
     display: flex;
     justify-content: center;
