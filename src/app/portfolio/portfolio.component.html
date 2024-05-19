@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <div class="content animate">
 <div class="portfolio-section" id="portfolio">
     <div class="portfolio-header">
@@ -7,16 +7,16 @@
         <img src="assets/img/Linepurple2.png" class="purplestroke">
     </div>
     <h2 class="subheader" data-aos="flip-in">{{ 'portfolio.portfolioHeader' | translate }}</h2>
-    <div *ngFor="let section of sections" class="project" data-aos="fade-in"
+    <div *ngFor="let section of sections" class="project" 
         [ngClass]="{ 'sharkieproject': section.projectType === 'sharkie' }">
         <div class="projectPic">
             <img [src]="section.imageUrl" class="projectlaptop" id="{{section.header}}" data-aos="flip-down">
         </div>
         <div class="projectDescription {{section.header}}">
-            <h1 class="projectHeader">{{ section.header }}</h1>
-            <h2 class="projectTechstack">{{ section.techstack }}</h2>
-            <p class="projectDescriptionText" *ngIf="section.header === 'Join'">{{ 'portfolio.joinText' | translate }}</p>
-            <p class="projectDescriptionText" *ngIf="section.header === 'Sharkie'">{{ 'portfolio.sharkieText' |translate }}</p>
+            <h1 class="projectHeader" data-aos="fade-in">{{ section.header }}</h1>
+            <h2 class="projectTechstack" data-aos="fade-in">{{ section.techstack }}</h2>
+            <p class="projectDescriptionText" *ngIf="section.header === 'Join'" data-aos="fade-in">{{ 'portfolio.joinText' | translate }}</p>
+            <p class="projectDescriptionText" *ngIf="section.header === 'Sharkie'" data-aos="fade-in">{{ 'portfolio.sharkieText' |translate }}</p>
             <div class="button-section">
                 <button class="testBtn" (click)="liveTestProject( section.testUrl )">Live test</button>
                 <button class="gitBtn" (click)="goToGithub( section.gitUrl )">Github</button>

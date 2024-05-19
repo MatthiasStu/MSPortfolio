@@ -5,9 +5,13 @@
             <div *ngFor="let logo of logos" class="logo-item" data-aos="fade-in"> 
                 <img [src]="logo.path" class="logo-item">
                 <p class="logoname">{{ logo.name }}</p>
+               
             </div>
+           
         </div>
-
+        <div class="buttonContainer1">
+            <a class="git-btn1" href="#talk" data-aos="fade-in">{{ 'myskills.gitbtn' | translate }}</a>
+        </div>
         <div class="skillstextcontainer" [ngStyle]="setGermanStyle()">
             <h1 class="myskillsheader" [ngStyle]="setFontSize()" data-aos="fade-in" >{{ 'myskills.myskills' | translate }}</h1>
             <p class="skillsText" [ngStyle]="centerText()" data-aos="fade-in">{{ 'myskills.msText' | translate }}</p>

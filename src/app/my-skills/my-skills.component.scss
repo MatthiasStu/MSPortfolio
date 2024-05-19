@@ -3,7 +3,7 @@
 }
 
 .myskills {
-    max-width: 3100px;
+    max-width: 1920px;
     display: flex;
     flex-direction: row;
     margin-top: -3px;
@@ -48,6 +48,24 @@
     }
 }
 
+.git-btn1 {
+    border-radius: 12px;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    background-color: #70E61C;
+    margin-top: 40px;
+    font-size: 23px;
+    filter: drop-shadow(4px 4px 4px #00000025);
+    transition: 0.1s ease-out;
+    text-decoration: none;
+    display: none;
+
+    &:hover {
+        transform: translateY(5px) translateZ(-5px) scale(1.1, 1.1);
+        background-color: #9747FF;
+        cursor: pointer;
+    }
+}
 .skillsText {
     color: white;
     text-align: right;
@@ -115,7 +133,7 @@
     width: 85px;
 }
 
-@media(min-width: 3100px) {
+@media(min-width: 1920px) {
     .skillstextcontainer {
         right: 450px;
     }
@@ -217,13 +235,16 @@
     }
 
     .git-btn {
-        position: absolute;
+        display: none;
         top: 1060px;
         transform: translateX(-140%);
 
         &:hover {
             transform: translateX(-140%);
         }
+    }
+    .git-btn1 { 
+        display: flex;
     }
 }
 

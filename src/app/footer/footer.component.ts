@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+  constructor(private router: Router) { } 
+
+  navigateToImpressum(){ 
+    this.router.navigate(['/impressum']); 
+  }
 goToGitHub(){
   document.location.href = 'https://github.com/MatthiasStu'
 }

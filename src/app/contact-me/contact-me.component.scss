@@ -13,7 +13,7 @@
 }
 
 .contact-section {
-    max-width: 3100px;
+    max-width: 1920px;
     display: flex;
 
 }
@@ -149,6 +149,7 @@ form{
     position: absolute;
     bottom: 50px;
     right: 0;
+    animation: moveUpDown 1s ease-in-out infinite;
 }
 
 .invalid{ color: red;}
@@ -193,7 +194,16 @@ span{
     color: red;
 }
 
-@media(min-width: 3100px){
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+@media(min-width: 1920px){
     .purpleline{ 
         display: none;
     }
