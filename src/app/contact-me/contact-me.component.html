@@ -22,7 +22,7 @@
             }
             <div class="checkbox-container">
                 <img src={{imgPath}} class="checkbutton" (click)="switchImage()">
-                <p class="privacy-policy" [ngStyle]="setMaxWidth()" >{{ 'contact.privacy' | translate }} <a href="https://matthias-stute.com/privacypolicy.html" class="director"> {{ 'contact.ppr' | translate }} </a>{{ 'contact.pp' | translate }}</p>
+                <p class="privacy-policy" [ngStyle]="setMaxWidth()" >{{ 'contact.privacy' | translate }} <a (click)="navigateToPP()" class="director"> {{ 'contact.ppr' | translate }} </a>{{ 'contact.pp' | translate }}</p>
             </div>
             <span id="invalid" class="invalid"></span>
             <button class="gray-btn" [class.send-btn]="isFormFilled(contactForm)" type="submit">Send message</button>

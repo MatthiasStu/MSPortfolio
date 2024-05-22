@@ -11,6 +11,7 @@ import { TranslateModule, TranslateService} from '@ngx-translate/core';
   standalone : true, 
   imports: [TranslateModule, NgStyle],
   templateUrl: './landing-page.component.html',
+  
   styleUrls: ['./landing-page.component.scss'] // ändere styleUrl zu styleUrls
 })
 export class LandingPageComponent {

@@ -1,0 +1,22 @@
+html{ 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.backgroundelement{ 
+    height: auto;
+
+    color: white;
+    background-color:  #141D2F;
+    margin: 0;
+    padding: 0;
+    max-width: 1920;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >h1{ 
+        margin: 0;
+    }
+}

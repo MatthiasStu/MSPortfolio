@@ -14,6 +14,7 @@ export class FooterComponent {
   navigateToImpressum(){ 
     this.router.navigate(['/impressum']); 
   }
+  
 goToGitHub(){
   document.location.href = 'https://github.com/MatthiasStu'
 }

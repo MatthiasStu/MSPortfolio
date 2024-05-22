@@ -5,6 +5,7 @@ import { inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import AOS from 'aos';
+import { Router } from '@angular/router';
 
 
 
@@ -20,7 +21,11 @@ export class ContactMeComponent {
   
     AOS.init();
   } 
-  constructor(private translateService: TranslateService) {}
+  constructor(private translateService: TranslateService, private router: Router) {}
+
+  navigateToPP(){ 
+    this.router.navigate(['/privacy-policy']); 
+  }
 
   setMarginLeft(){
     if(this.translateService.currentLang === 'de'){
