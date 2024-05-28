@@ -4,10 +4,24 @@
     justify-content: $jcstyle;
     align-items: $aistyle;
 }
-
+.content{
+  margin-bottom: -2px;
+}
 h2{ 
     margin: 0;
     font-size: 45px
+}
+
+a{ 
+  text-decoration: none;
+  color: white;
+}
+.initals{
+  transition: 0.1s;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
 .countryFlag{ 
   height: 45px;
@@ -24,6 +38,8 @@ h2{
 }
 .content{ 
   background-color: #141D2F;
+  display: flex;
+  justify-content: center;
 }
 .header {
   position: relative;
@@ -34,6 +50,7 @@ h2{
   padding:  37px 100px 37px 100px; 
   z-index: 1000;
   max-width: 1920px;
+  width: 100vw;
   >.header-left{ 
     color: white;
     font-size: 28px;

@@ -13,6 +13,9 @@
 
 .content{ 
     background-color: #141D2F;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
 }
 .mailbutton{ 
     margin-top: 4px;
@@ -116,10 +119,11 @@
     position: absolute;
     z-index: 1000;
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
     gap: 70px;
+    left: 0;
 }
 
 .Purplestroke {
@@ -166,6 +170,9 @@
       transform: translateY(-6px);
     }
   }
+
+
+
 @media (max-width : 1720px) {
 
 
@@ -197,6 +204,21 @@ $breakpoints: (
     }
 }
 
+
+@media (min-width: 1920px) {
+  .scrolldown {
+    right: calc((100% - 1920px) / 2 );
+    max-width: 1900px; 
+  }
+  .landing-page-footer{ 
+    left: calc((100% - 1920px) / 2 ); 
+    max-width: 1900px;
+  }
+} 
+@media(max-width: 1935px){ 
+    .scrolldown{ right: 20px;}
+}
+
 @each $breakpoint, $margin-left in $breakpoints {
     @media(max-width: $breakpoint) {
         .landing-page-right {
@@ -207,8 +229,18 @@ $breakpoints: (
 
 @media(max-width: 2200px){ 
     .landing-page-footer{
-        margin-top: 120px;
+        margin-top: 170px;
     }
+}
+
+@media(max-width: 1695px){
+     .textfield{ 
+        margin-left: -100px;
+     }
+     .lets-talk-btn{ 
+        margin-left: -100px;
+     }
+
 }
 
 @media(max-width: 1150px) {
@@ -222,12 +254,16 @@ $breakpoints: (
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin-top: -135px;
 
     }
-
+.lets-talk-btn{
+    margin-left: 0;
+}
     .textfield {
         margin-top: -380px;
         margin-right: -25px;
+        margin-left: 0;
     }
 
     .backgroundpic {
@@ -244,9 +280,7 @@ $breakpoints: (
         margin-top: 120px;
     }
 
-    .profilpicture {
-        margin-top: -170px;
-    }
+  
 
     .myname {
         margin-top: 244px;

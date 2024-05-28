@@ -1,5 +1,9 @@
 .content{ 
     background-color: #141D2F;
+   
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
 }
 .contact-me {
     background-color: #141D2F;
@@ -9,11 +13,13 @@
     position: relative;
     overflow: hidden;
     margin-top: -5px;
+    max-width: 1920px;
+    width: 100vw;
 
 }
 
 .contact-section {
-    max-width: 1920px;
+  
     display: flex;
 
 }
@@ -157,6 +163,9 @@ form{
 .privacy-policy {
     color: #ffffff;
     margin-left: 12px;
+    &:hover{ 
+        cursor: pointer;
+    }
 }
 
 .director {
@@ -313,6 +322,12 @@ span{
     }
     .contact-me-text{ 
         max-width: 310px;
+    }
+    .contact-subheader{
+        font-size: 26px;
+    }
+    .contact-header{
+        font-size: 70px;
     }
 }
 

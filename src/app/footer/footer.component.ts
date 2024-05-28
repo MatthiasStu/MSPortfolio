@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-footer',
@@ -9,17 +10,26 @@ import { Router } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  constructor(private router: Router) { } 
+  constructor(private router: Router) { 
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      window.scrollTo(0, 0);
+    });
 
-  navigateToImpressum(){ 
-    this.router.navigate(['/impressum']); 
-  }
+  } 
+
+
   
+  navigateToPP(){ 
+    this.router.navigate(['/privacy-policy']); 
+  }
+
 goToGitHub(){
-  document.location.href = 'https://github.com/MatthiasStu'
+  window.open('https://github.com/MatthiasStu', '_blank');
 }
 goToLinkedIn(){ 
-  document.location.href = 'https://www.linkedin.com/in/matthias-stute-664147305/'
+  window.open('https://www.linkedin.com/in/matthias-stute-664147305/', '_blank');
 }
 scrollToSection(sectionId: string) {
   const section = document.querySelector(sectionId);

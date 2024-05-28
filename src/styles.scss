@@ -17,4 +17,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
     height: auto;
-}
+   overflow-x: hidden;} 
+   
+
+::-webkit-scrollbar {
+    width: 14px; /* Breite der vertikalen Scrollbar */
+    height: 14px; /* Höhe der horizontalen Scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:#2A3647; /* Hintergrund der Scroll-Leiste */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #9747FF; /* Farbe des Scrollbar-Thumbs */
+    border-radius: 16px; /* Abgerundete Ecken */
+  }
+  
