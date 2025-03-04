@@ -13,18 +13,19 @@ import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from './footer/footer.component';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { ImpressumComponent } from './impressum/impressum.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
-}
+};
+
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [ RouterOutlet, HeaderComponent, LandingPageComponent, AboutMeSectionComponent, MySkillsComponent, PortfolioComponent, ContactMeComponent, FooterComponent]
+    imports: [ RouterOutlet, HeaderComponent, LandingPageComponent, AboutMeSectionComponent, MySkillsComponent, PortfolioComponent, ContactMeComponent, FooterComponent ]
 })
+ 
 export class AppComponent {
   title = 'matthias-stute-portfolio';
   constructor(private translate: TranslateService) { }

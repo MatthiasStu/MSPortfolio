@@ -410,6 +410,13 @@
     .projectDescription{ 
         max-width: 320px;
     }
+    .portfolio-header{
+        max-width: 214px;  
+        margin-left: 8px;
+    }
+    .subheader{ 
+        max-width: 214px !important;
+    }
  }
  @media(max-width: 383px) { 
     .portfolio-header{ 
