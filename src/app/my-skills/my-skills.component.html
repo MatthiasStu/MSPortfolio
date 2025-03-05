@@ -16,9 +16,10 @@
             <h1 class="myskillsheader" [ngStyle]="setFontSize()" data-aos="fade-in" >{{ 'myskills.myskills' | translate }}</h1>
             <p class="skillsText" [ngStyle]="centerText()" data-aos="fade-in">{{ 'myskills.msText' | translate }}</p>
             <div class="buttonContainer">
-                <a class="git-btn" href="#talk" data-aos="fade-in">{{ 'myskills.gitbtn' | translate }}</a>
+                <a class="git-btn" (click)="scrollToSection()" data-aos="fade-in">{{ 'myskills.gitbtn' | translate }}</a>
             </div>
         </div>
         <img src="assets/img/purpleline.png" class="purpleline">
     </div>
 </div>
+

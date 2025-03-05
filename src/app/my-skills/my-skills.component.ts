@@ -44,6 +44,14 @@ export class MySkillsComponent {
       return{'font-size' : '90px'}
     }
   }
+  
+  scrollToSection() {
+    const element = document.getElementById("talk");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+  
 
 logos = [
   {name: 'Angular', path: 'assets/img/logos/Angular.png'},

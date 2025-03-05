@@ -417,6 +417,20 @@
     .subheader{ 
         max-width: 214px !important;
     }
+
+    .portfolio-header{ 
+        display: flex;
+        max-width: 383px;
+        justify-content: center;
+        
+    
+        >h1{ 
+            text-align: left;
+            width: 58vw;
+            max-width: 280px;
+            font-size: 60px;
+        }
+    }
  }
  @media(max-width: 383px) { 
     .portfolio-header{ 

@@ -1,29 +1,31 @@
 <div class="content">
     <div class="landingpage">
-    <div class="landing-page-main-content" >
-    <img src="assets/img/shadows22.png" class="backgroundpic">
-    <img src="assets/img/noBackground-min-min2.png" class="profilpicture">
+        <div class="landing-page-main-content">
+            <img src="assets/img/shadows22.png" class="backgroundpic">
+            <img src="assets/img/noBackground-min-min2.png" class="profilpicture">
 
-    <div class="landing-page-right">
-        <div class="textfield">
-            <p class="iam" [ngStyle]="setFontSize()">{{ 'landingpage.iam' | translate }}</p>
-            <div class="introductionField">
-                <p class="myname">Matthias Stute</p><br>
-                <p class="frontend-dev">FRONTEND DEVELOPER</p>
+            <div class="landing-page-right">
+                <div class="textfield">
+                    <p class="iam" [ngStyle]="setFontSize()">{{ 'landingpage.iam' | translate }}</p>
+                    <div class="introductionField">
+                        <p class="myname">Matthias Stute</p><br>
+                        <p class="frontend-dev">FRONTEND DEVELOPER</p>
+                    </div>
+                </div>
+                <a class="lets-talk-btn" (click)="scrollToSection()">{{ 'landingpage.letstalk' | translate }}</a>
             </div>
         </div>
-        <a class="lets-talk-btn" [href]="'#talk'">{{ 'landingpage.letstalk' | translate }}</a>
+        <div class="landing-page-footer">
+            <img src="assets/img/Purplestroke.png" class="Purplestroke">
+            <img src="../../assets/img/githubbutton.png" (click)="redirectToExternalWebsite(1)" class="githubbutton">
+            <a href="#talk">
+                <img src="assets/img/Mailbutton.png" class="mailbutton">
+            </a>
+            <img src="assets/img/Linkedinbutton.png" (click)="redirectToExternalWebsite(2)" class="linkedinbutton">
+            <a [href]="'mailto:' + mailadress" class="mailadresslink">
+                <p class="mailadress">{{mailadress}}</p>
+            </a>
+        </div>
+        <img src="assets/img/Scroll_down.png" class="scrolldown">
     </div>
-</div>
-<div class="landing-page-footer">
-    <img src="assets/img/Purplestroke.png" class="Purplestroke">
-    <img src="../../assets/img/githubbutton.png" (click)="redirectToExternalWebsite(1)" class="githubbutton">
-    <a href="#talk">
-    <img src="assets/img/Mailbutton.png" class="mailbutton" >
-</a>
-    <img src="assets/img/Linkedinbutton.png" (click)="redirectToExternalWebsite(2)" class="linkedinbutton">
-    <p class="mailadress">{{mailadress}}</p>
-</div>
-<img src="assets/img/Scroll_down.png" class="scrolldown">
-</div>
 </div>

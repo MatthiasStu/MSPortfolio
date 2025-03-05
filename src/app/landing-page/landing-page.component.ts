@@ -12,7 +12,7 @@ import { TranslateModule, TranslateService} from '@ngx-translate/core';
   imports: [TranslateModule, NgStyle],
   templateUrl: './landing-page.component.html',
   
-  styleUrls: ['./landing-page.component.scss'] // ändere styleUrl zu styleUrls
+  styleUrls: ['./landing-page.component.scss'] 
 })
 export class LandingPageComponent {
 
@@ -26,6 +26,12 @@ export class LandingPageComponent {
     }
   }
 
+  scrollToSection() {
+    const element = document.getElementById("talk");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
   mailadress:string = 'matthiasstute@yahoo.de';
   linkedin:string = 'https://www.linkedin.com/in/matthias-stute-664147305/';

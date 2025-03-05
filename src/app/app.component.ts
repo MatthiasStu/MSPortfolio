@@ -23,7 +23,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [ RouterOutlet, HeaderComponent, LandingPageComponent, AboutMeSectionComponent, MySkillsComponent, PortfolioComponent, ContactMeComponent, FooterComponent ]
+    imports: [ RouterOutlet, HeaderComponent, FooterComponent ]
 })
  
 export class AppComponent {
